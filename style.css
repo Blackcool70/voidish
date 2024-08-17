@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c1b29; /* Dark purple background */
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #d1c4e9; /* Light purple text color */
+    font-size: 5rem;
+    font-weight: bold;
+    text-shadow: 0 0 20px #9c27b0, 0 0 30px #7b1fa2, 0 0 40px #6a1b9a; /* Glowing effect */
+}
+
+@keyframes glow {
+    0% { text-shadow: 0 0 20px #9c27b0, 0 0 30px #7b1fa2, 0 0 40px #6a1b9a; }
+    50% { text-shadow: 0 0 30px #9c27b0, 0 0 50px #7b1fa2, 0 0 70px #6a1b9a; }
+    100% { text-shadow: 0 0 20px #9c27b0, 0 0 30px #7b1fa2, 0 0 40px #6a1b9a; }
+}
+
+h1 {
+    animation: glow 2s infinite;
+}
