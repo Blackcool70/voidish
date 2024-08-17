@@ -23,6 +23,30 @@ h1 {
     text-shadow: 0 0 20px #7b1fa2, 0 0 30px #6a1b9a, 0 0 40px #4a148c; /* Glowing effect */
 }
 
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-shadow: 0 0 10px #7b1fa2, 0 0 20px #6a1b9a;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.nav-links a:hover {
+    color: #d1c4e9;
+    text-shadow: 0 0 15px #9575cd, 0 0 25px #673ab7;
+}
+
 @keyframes glow {
     0% { text-shadow: 0 0 20px #7b1fa2, 0 0 30px #6a1b9a, 0 0 40px #4a148c; }
     50% { text-shadow: 0 0 30px #7b1fa2, 0 0 50px #6a1b9a, 0 0 70px #4a148c; }
