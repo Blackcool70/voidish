@@ -4,9 +4,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1c1b29; /* Dark purple background */
-    font-family: 'Arial', sans-serif;
+    background: url('https://source.unsplash.com/featured/?space,stars,nebula') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Orbitron', sans-serif;
     overflow: hidden;
+    color: #fff;
 }
 
 .container {
@@ -14,16 +16,17 @@ body {
 }
 
 h1 {
-    color: #d1c4e9; /* Light purple text color */
-    font-size: 5rem;
+    color: #ffffff; /* White text color */
+    font-size: 6rem;
     font-weight: bold;
-    text-shadow: 0 0 20px #9c27b0, 0 0 30px #7b1fa2, 0 0 40px #6a1b9a; /* Glowing effect */
+    text-transform: uppercase;
+    text-shadow: 0 0 20px #7b1fa2, 0 0 30px #6a1b9a, 0 0 40px #4a148c; /* Glowing effect */
 }
 
 @keyframes glow {
-    0% { text-shadow: 0 0 20px #9c27b0, 0 0 30px #7b1fa2, 0 0 40px #6a1b9a; }
-    50% { text-shadow: 0 0 30px #9c27b0, 0 0 50px #7b1fa2, 0 0 70px #6a1b9a; }
-    100% { text-shadow: 0 0 20px #9c27b0, 0 0 30px #7b1fa2, 0 0 40px #6a1b9a; }
+    0% { text-shadow: 0 0 20px #7b1fa2, 0 0 30px #6a1b9a, 0 0 40px #4a148c; }
+    50% { text-shadow: 0 0 30px #7b1fa2, 0 0 50px #6a1b9a, 0 0 70px #4a148c; }
+    100% { text-shadow: 0 0 20px #7b1fa2, 0 0 30px #6a1b9a, 0 0 40px #4a148c; }
 }
 
 h1 {
