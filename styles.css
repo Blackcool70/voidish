@@ -5,7 +5,7 @@ body {
     justify-content: center;
     align-items: center;
     background: url('https://wallpapers.com/images/hd/void-0rcoouxk2j7r4sxm.jpg') no-repeat center center fixed;
-    background-size: cover;
+    background-size: cover; /* Ensures the background covers the entire viewport */
     font-family: 'Orbitron', sans-serif;
     overflow: hidden;
     color: #fff;
@@ -16,7 +16,7 @@ body {
 }
 
 h1 {
-    color: #ffffff; /* White text color */
+    color: #ffffff;
     font-size: 6rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -34,15 +34,28 @@ h1 {
     margin: 0 15px;
 }
 
+/* Link styles */
 .nav-links a {
     text-decoration: none;
-    color: #ffffff;
+    color: #ffffff; /* Default link color */
     font-size: 1.5rem;
     text-shadow: 0 0 10px #7b1fa2, 0 0 20px #6a1b9a;
     transition: color 0.3s, text-shadow 0.3s;
 }
 
+/* Visited link style */
+.nav-links a:visited {
+    color: #ffffff; /* Ensures visited links have the same color */
+}
+
+/* Hover style */
 .nav-links a:hover {
+    color: #d1c4e9; /* Light purple color on hover */
+    text-shadow: 0 0 15px #9575cd, 0 0 25px #673ab7;
+}
+
+/* Active link style */
+.nav-links a:active {
     color: #d1c4e9;
     text-shadow: 0 0 15px #9575cd, 0 0 25px #673ab7;
 }
