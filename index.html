@@ -4,25 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VOIDISH</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <h1>VOIDISH</h1>
+    <div class="container has-text-centered">
+        <h1 class="title">VOIDISH</h1>
         <nav>
-            <h2>MINECRAFT</h2>
+            <h2 class="subtitle">MINECRAFT</h2>
             <ul class="nav-links">
-                <li><a href="https://map.voidish.xyz/" target="_blank">MINECRAFT MAP</a></li>
-                <li><a href="https://shop.voidish.xyz/" target="_blank">MINECRAFT SHOP</a></li>
+                <li><a href="https://map.voidish.xyz/" target="_blank" class="is-link">MINECRAFT MAP</a></li>
+                <li><a href="https://shop.voidish.xyz/" target="_blank" class="is-link">MINECRAFT SHOP</a></li>
             </ul>
         </nav>
-        <div id="server-status">
-            <h2>Server Status</h2>
-            <p>Status: <span id="status">Loading...</span></p>
-            <p>Players Online: <span id="players">Loading...</span></p>
+        <div id="server-status" class="box">
+            <p>Minecraft server Status: <span id="status" class="has-text-weight-bold">Loading...</span></p>
+            <p>Players: <span id="players" class="has-text-weight-bold">Loading...</span></p>
         </div>
     </div>
     <script src="script.js"></script>

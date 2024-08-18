@@ -11,25 +11,24 @@ body {
     color: #fff;
 }
 
-.container {
-    text-align: center;
-}
-
-h1 {
-    color: #ffffff;
-    font-size: 6rem;
-    font-weight: bold;
+/* Ensure white text color for the title and subtitle */
+h1.title {
+    font-size: 6rem; /* Increase font size */
+    color: #ffffff; /* White text */
     text-transform: uppercase;
     text-shadow: 0 0 20px #7b1fa2, 0 0 30px #6a1b9a, 0 0 40px #4a148c; /* Glowing effect */
-    animation: glow 2s infinite; /* Apply glowing animation */
 }
 
-h2 {
-    color: #ffffff;
-    font-size: 2.5rem;
-    margin: 20px 0;
-    text-transform: uppercase;
-    text-shadow: 0 0 10px #7b1fa2, 0 0 20px #6a1b9a; /* Glowing effect for subheadings */
+h2.subtitle {
+    font-size: 2.5rem; /* Increase font size for subtitle */
+    color: #ffffff; /* White text */
+    margin-top: 20px;
+    text-shadow: 0 0 15px #7b1fa2, 0 0 25px #6a1b9a; /* Subtle glow effect for subtitle */
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px; /* Add margin to position the content */
 }
 
 .nav-links {
@@ -43,51 +42,27 @@ h2 {
     margin: 0 15px;
 }
 
-/* Link styles */
 .nav-links a {
-    text-decoration: none;
-    color: #ffffff; /* Default link color */
+    color: #fff;
     font-size: 1.5rem;
-    text-shadow: 0 0 10px #7b1fa2, 0 0 20px #6a1b9a;
+    text-shadow: 0 0 10px #7b1fa2, 0 0 20px #6a1b9a; /* Glow effect on links */
     transition: color 0.3s, text-shadow 0.3s;
 }
 
-/* Visited link style */
-.nav-links a:visited {
-    color: #ffffff; /* Ensures visited links have the same color */
+h1 {
+    animation: glow 2s infinite;
 }
 
-/* Hover style */
-.nav-links a:hover {
-    color: #d1c4e9; /* Light purple color on hover */
-    text-shadow: 0 0 15px #9575cd, 0 0 25px #673ab7;
+.box{
+    background: #7b1fa200;
 }
 
-/* Active link style */
-.nav-links a:active {
-    color: #d1c4e9;
-    text-shadow: 0 0 15px #9575cd, 0 0 25px #673ab7;
+p{
+    color: #fff;
+    text-shadow: 0 0 20px #7b1fa2, 0 0 30px #6a1b9a, 0 0 40px #4a148c; /* Glowing effect */
+
 }
 
-#server-status {
-    margin-top: 40px;
-    font-size: 1.5rem;
-}
-
-#server-status h2 {
-    margin-top: 0;
-    font-size: 2rem;
-}
-
-#server-status p {
-    margin: 10px 0;
-}
-
-#server-status span {
-    font-weight: bold;
-}
-
-/* Animation for glowing effect */
 @keyframes glow {
     0% { text-shadow: 0 0 20px #7b1fa2, 0 0 30px #6a1b9a, 0 0 40px #4a148c; }
     50% { text-shadow: 0 0 30px #7b1fa2, 0 0 50px #6a1b9a, 0 0 70px #4a148c; }
